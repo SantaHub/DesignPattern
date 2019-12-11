@@ -13,6 +13,13 @@
     - Program to interfaces, not implementations
     - Strive for loosely coupled designs between objects that interact
 
+## SOLID Principle
+    - Single Responsibility
+    - Open for extension, Closed for modification
+    - Liskov substitution principle
+    - Interface segregation principle
+    - Dependency inversion principle
+
 ## Stratergy Pattern
     - use interfaces to build Object Types. 
     - Assign an implementation to the object as per stratergy.
