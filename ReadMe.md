@@ -34,4 +34,21 @@
     - One to many relationship and loosely coupled. Java util Observable voids these principles by being a class. 
 
 ## Decorator Pattern
+    - Wraps an object over another. Decorator will contain the object its decorated on inside as a variable.
+    - Lets say we have make a dark Roast
+        - Create an interface of Beverage.
+            - Dark Roast implements Beverage
+            - Create an interface Decorators implementing Beverage
+                - Create cream whip class with Decorator interface
+                - Create choco chips class with Decorator interface
+            - Set the Decorator classes to call cost fn of the object it is decorating. like def cost() : myCost+decor.cost()
+
+## Factory Pattern
+    - A conditional statement decides which object has to be returned.
+
+## Singleton Pattern
+    - Class can have only one object.
+    - Use a object check to see if an instance is already created.
+
+## Command Pattern
     - 
