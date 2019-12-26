@@ -23,13 +23,28 @@
     - Interface segregation principle
     - Dependency inversion principle
 
+## The gang of Four
+    Book : Design Patter : Elements of Reusable Object oriented Software
+    Authors : Erich Gamma, John Vlissides, Richard Helm, Ralph Johnson
+    They have identified and classified Design patterns into 3. Some patterns have blended boundaries through multiple patterns
+
+### Pattern Language 
+    Also known as implementation language. Each specific are has its own pattern langauge, such as in accounting, the double entry book keeping vs the game theories in game development. The Pattern languages are specific some areas and needed to be learned to solve problems in that field.
 
 ## Creational Patten
     Deals with creation and cloning new object.
+    In java, the objects are desided at compile time. 
+    In javascrript, the objects can be cloned and exteneded during run time.
 
 ### Singleton Pattern
     - Class can have only one object.
     - Use a object check to see if an instance is already created.
+    Pros :
+        - Restrict unwanted object creation in large projects with multiple developers
+    Cons :
+        - Have thread wait issues during multithreaded application
+    The multithread issue can be solved by using synchronized methods. 
+    Even better, use double checking to avoid the overhead of synchronized method, instead use a synchronized block for just assigning the object. Checkout the article in [geeksforgeeks](https://www.geeksforgeeks.org/java-singleton-design-pattern-practices-examples/).
 
 ### Factory Pattern
     - A conditional statement decides which object has to be returned.
