@@ -32,6 +32,7 @@
     Also known as implementation language. Each specific are has its own pattern langauge, such as in accounting, the double entry book keeping vs the game theories in game development. The Pattern languages are specific some areas and needed to be learned to solve problems in that field.
 
 ## Creational Patten
+---
     Deals with creation and cloning new object.
     In java, the objects are desided at compile time. 
     In javascrript, the objects can be cloned and exteneded during run time.
@@ -51,6 +52,7 @@
     - Since the factory method deals with the object creation, the other components of the program can deal with the functionalily, but should be in a generalized way
 
 ## Structural Pattern
+---
     Deals with how the objects are connected to meet a specific design goal. DP of Decomposition and generalization.
 
 ### Facade Pattern
@@ -59,9 +61,19 @@
     - A Controller is used as a Facade which instantiate services using the Interface type.
     - Used when the Program has multiple similar type of service. Ex : Bank account types.
     - DP used : encapsulation, information hiding and Seperation of concern
-    - Example : Restuarant Menu, Delivery Services, Bank Services.
+    Example : Restuarant Menu, Delivery Services, Bank Services.
+
+### Adapter Pattern
+    Provides a transilation on one service for another
+    - Translates the messages from adaptee to client and vice versa.
+    - Used when to incompactable service need to work together
+    - Neither of the service modification to be directly compactable is possible 
+    Example: An XML based service talking to a Json REST Service
+
+
 
 ## Behavioural Pattern
+---
     How the each object in the design work together to achieve same goal.   
 
 ## Stratergy Pattern
