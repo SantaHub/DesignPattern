@@ -1,6 +1,9 @@
 # Design Patterns. 
-    Head First Series 12 Design Patterns. ISBN : 9788173664663
-    Design Patterns: Elements of Reusable Object-Oriented Software, 23 Design Patterns.
+Head First Series 12 Design Patterns. ISBN : 9788173664663
+
+Design Patterns: Elements of Reusable Object-Oriented Software, 23 Design Patterns.
+
+[Coursera Design Pattern University of Alberta](https://www.coursera.org/learn/design-patterns)
 
     The 23 Design pattern book was written by "Gang of four", They have categorized the patterns into 3 categorize to structure them in their books, some of the patterns span all categorizes and without a clear cut. The categorize are "Creational Pattern, Structural Pattern, Behavioural Pattern"
 
@@ -11,7 +14,7 @@
     - Inheritance
 
 ## OO Principles
-    - Encapsulate what varries
+    - Encapsulate what varies
     - Favor composition over inheritance
     - Program to interfaces, not implementations
     - Strive for loosely coupled designs between objects that interact
@@ -77,6 +80,22 @@
     - Proxy Classes can be a validator for the real object class.
     Example: Personal Assistant.
 
+### Decorator Pattern
+    Uses aggregation to build up stack of object at run time
+    - Decorator acts as the implementor
+    - Decorator will contain the object its decorated on inside as a variable.
+    - Lets say we have make a dark Roast
+        - Create an interface of Beverage.
+            - Dark Roast implements Beverage
+            - Decorators Interface implements Beverage
+                - cream whip class with Decorator interface
+                - choco chips class with Decorator interface
+            - Set the Decorator classes to call cost fn of the object it is decorating. 
+            - like def cost() : myCost+super.cost()
+            - The Dark Roast would then stack the decorators
+                - DR =new DarkRoast(); DR = new Cream(DR); DR = new Choco(cream) 
+                - dr.cost(); would call cost from choco to DarkRoast.
+
 ## Behavioural Pattern
 ---
     How the each object in the design work together to achieve same goal.   
@@ -93,16 +112,6 @@
         - setChanged()
         - notifyObservers()
     - One to many relationship and loosely coupled. Java util Observable voids these principles by being a class. 
-
-## Decorator Pattern
-    - Wraps an object over another. Decorator will contain the object its decorated on inside as a variable.
-    - Lets say we have make a dark Roast
-        - Create an interface of Beverage.
-            - Dark Roast implements Beverage
-            - Create an interface Decorators implementing Beverage
-                - Create cream whip class with Decorator interface
-                - Create choco chips class with Decorator interface
-            - Set the Decorator classes to call cost fn of the object it is decorating. like def cost() : myCost+decor.cost()
 
 
 
