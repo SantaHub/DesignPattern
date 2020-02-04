@@ -54,7 +54,12 @@
     Deals with how the objects are connected to meet a specific design goal. DP of Decomposition and generalization.
 
 ### Facade Pattern
-
+    Provide client simple interface for complex backend.
+    - All service classes can be wrapped using a common Interface
+    - A Controller is used as a Facade which instantiate services using the Interface type.
+    - Used when the Program has multiple similar type of service. Ex : Bank account types.
+    - DP used : encapsulation, information hiding and Seperation of concern
+    - Example : Restuarant Menu, Delivery Services, Bank Services.
 
 ## Behavioural Pattern
     How the each object in the design work together to achieve same goal.   
