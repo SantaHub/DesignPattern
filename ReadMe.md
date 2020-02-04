@@ -70,7 +70,12 @@
     - Neither of the service modification to be directly compactable is possible 
     Example: An XML based service talking to a Json REST Service
 
-
+### Proxy Pattern
+    Simplified or light-weight object inplace of the original Object
+    - The real object may resource intensive or have sensitive data
+    - Proxy classes implements same interface as real objects.
+    - Proxy Classes can be a validator for the real object class.
+    Example: Personal Assistant.
 
 ## Behavioural Pattern
 ---
