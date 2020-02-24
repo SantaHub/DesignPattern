@@ -113,7 +113,11 @@ Design Patterns: Elements of Reusable Object-Oriented Software, 23 Design Patter
         - notifyObservers()
     - One to many relationship and loosely coupled. Java util Observable voids these principles by being a class. 
 
-
+## Template Method Pattern
+    Should have 3 components
+    - 'final' Template method that has several steps (public final void driveToDestination() )
+    - 'abstract' methods defined by the subclasses (protected abstract void accelerate(), steer(), and brake())
+    - May have a 'private' common method. (private void reachDestination() )
 
 ## Command Pattern
     - 
