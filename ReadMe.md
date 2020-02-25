@@ -100,12 +100,12 @@ Design Patterns: Elements of Reusable Object-Oriented Software, 23 Design Patter
 ---
     How the each object in the design work together to achieve same goal.   
 
-## Stratergy Pattern
+### Stratergy Pattern
     - use interfaces to build Object Types. 
     - Assign an implementation to the object as per stratergy.
     - Example : Character Interface. King, Queen, Knight implementations of it.
 
-## Observer Pattern
+### Observer Pattern
     - Publisher, Listener/Observer 
     - Can use the Java build in Observer interface
     - Extends Observable. java.util.Observable
@@ -113,9 +113,17 @@ Design Patterns: Elements of Reusable Object-Oriented Software, 23 Design Patter
         - notifyObservers()
     - One to many relationship and loosely coupled. Java util Observable voids these principles by being a class. 
 
+### State Pattern
+    Uses a state interface.
+    - Each state would do its function and change the 'current state' to the next state.
+    Example : states of a vending machine
 
+### Command Pattern
+    Makes a command object each time an event occurs. This helps to keep the events independent of the user interface. Each time a button is clicked a command object of the type is created and executed.
+    - Each command has a execute(), unexecute() and isReversable() fns
 
-## Command Pattern
-    - 
-
-
+### Mediator Pattern
+    When multiple objects have to corrdinate with each other, instead to pair collaboration, they all talk to a mediator which then using its logic request tasks to other recepient objects
+    Colleagues : Objects associated with the mediator
+    - Mediator allow loose coupling between components
+    - Took much configuration to the mediator could make the class large.
