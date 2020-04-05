@@ -41,3 +41,5 @@ The Boy Scout Rule : Keep the ground better than you found it.
 
 Function should be small.
 Small scoped functions should have long discriptive names.
+Long functions could be made into classes. 
+Functions do one thing. Well.
