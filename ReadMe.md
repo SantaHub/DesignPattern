@@ -214,10 +214,11 @@ The goal of OO design is to :
 
 - Too much or too little comments
 - Large classes : poor seperation of class
-- Large Methods
+- Long Methods
+- Long parameter list
 - DRY, duplicate code
 - Data Clumps : Use objects instead of recurring sets of attributes. Eg: instead of int x, int y, int z use Coordinates xyz;
-  - Be smart to use some other methods than just getter and setters.
+  - Be smart to use some other methods than just getter and setters when resolving Data Clumps.
 - shortgun surgery : Sometimes to make a change we have to modify multiple places
 - Feature Envy : If two classes are talking too much, they should be combined.
 - Inappropriate intimacy : cyclic method call between two classes. Unavoidable in state DP.
