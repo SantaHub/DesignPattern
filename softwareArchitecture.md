@@ -168,4 +168,14 @@ Eg : RSS feed, mailing list.
 
 ## Process Control Systems
 
-### Process control
+They are important in efficient and safe operation. 
+
+### Feedback loop
+
+Feedback loops have 4 basic component :
+    - sensor
+    - controller
+    - actuator
+    - process
+Feedback loops are designed for closed system. Other variants of feedback loop for open system is Feedforward control, they are designed to control process in series.
+
