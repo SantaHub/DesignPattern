@@ -179,4 +179,92 @@ Feedback loops have 4 basic component :
     - process
 Feedback loops are designed for closed system. Other variants of feedback loop for open system is Feedforward control, they are designed to control process in series.
 
+## Architecture in Practice
 
+## Architectural Tradeoffs
+
+### Quality Attributes
+
+Developer Perspective :
+Properties used to gauge system design,run time performance and usability.
+    Maintainability : How easy the system can undergo change. Ease of repair and minor change.
+    Flexibility : Changeability over requirements. Ease of expanding product.
+    Reusability : Portability of system functionalities. Eg: micro-services
+    Testability : Ability to allow feature testing.
+    Conceptual Integrity : Consistency across system. Naming convention, design followed.
+
+User Perspective :
+    Availability : High SLA
+    Interoperability : information exchange and data handling. Protocols, Data format.
+    Security : Authorized accesses.
+    Data integrity : Data access
+    Performance : Throughput and latency
+    Usability : UX
+
+How to design high quality system?
+    - Architecture design : Go for the simplest solution that satisfy all requirements. Once decided shouldn't be altered.
+    - Documentation : The Arch design should be documented
+    - Methodical : Set rules, guidelines, design process and structure.
+    - Involve Tech Lead for design to implementation, stakeholders to confirm requirements.
+
+Structural rules :
+    - Well defined subsystems with responsibilities and design principles
+    - Consistent implementation of functions. All subsystems should follow similar principles.
+    - Rules on resource on usage.
+
+In summary, when selecting the appropriate architecture, involve all stakeholders in the design, adopt good documentation practices, and set rules for design and implementation.
+A well-designed system considers quality attributes from a developer’s perspective, which includes maintainability, reusability, flexibility, modifiability, testability, and conceptual integrity; the system should also consider attributes from a user’s perspective, which includes availability, interoperability, security, performance, and usability.
+
+### Analyzing and Evaluating Architecture
+
+ATAM developed by Carnegie Mellon University, allows outsiders to evaluate systems they are not part of.
+The Evaluation team has 3 groups :
+    - Designers :
+        - Responsible for architectural design
+        - Follow iterative hypothesis driven design.
+        - Analyzing requirements, Creating a design, reviewing the design
+    - Peers :
+        - Other software teams
+        - allows different view points
+    - Outsiders :
+        - They should be experienced in architectural evaluation.
+
+ATAM Process :
+    - Present the ATAM : Evaluation team present ATAM process, including context evaluation, expectations, procedures, outputs and concerns.
+    - Present business drivers : Project decision makers present business problem and goals fro the system. Also features, requirements, constrains and scope.
+    - Present the architecture : Current architecture is presented with constrains, time, cost, difficulty and quality.
+
+    - Identify architectural approach : first analysis activity, involves examining the architectural patterns used, involving all stakeholder's queries.
+    - Create a quality attribute tree : Requirement for each quality attribute is detailed. Gain insight on the system and quality ASR (Architecturally significant requirement) by working with project decision makers to refine this utility tree.
+    - Analyze the architectural approaches : From the utility tree, the ASR is analyzed to how well the current architecture meet them. This allows to identify risk and non-risk scenarios, sensitivity points and trade-offs.
+    - Brainstorm and prioritize scenarios : Each team would create their own prioritized utility tree which is merged together.
+    - Re-analyze architectural approach : The architectural approach is reanalyzed to reduce the difference between architectural utility tree and requirements utility tree.
+    - Present the result : The result contains :
+        - risk scenarios : grouped together as risk themes. This helps to identify affected user base.
+        - All risk and non risk scenarios
+        - sensitivity points
+        - tradeoffs
+        - risk themes
+
+## Product Architecture
+
+Conway's Law : The states of a software system will tend to take form that in congruous to the organization that produced it. Open sourced softwares are more loosely couples than in house build softwares. Allowing teams to be modular helps create modular systems.
+
+### Produce Line and Product Families
+
+Product line or families harness code re-use.
+Produce line are groups of products that share same OS, which allow a great deal of code re-use. 
+
+Product Line architectural consideration :
+    - Commonalities : features same throughout all products
+    - Variations : Features that vary between products.
+    - product specification : features that are unique product.
+
+Development Teams are divided as :
+    - Domain engineering : development of commonalities and variations. They focus on reference architecture which all products in the line use.
+    - Application engineering : development of product, product specific features.
+
+To realize variation on the system :
+    - Adaptation technique : Component has only one implementation but supplies interfaces, configuration files or method overriding to adapt for a problem.
+    - Replacement technique : There would be a gap in the system and developer supply on component to suit it for the problem.
+    - Extension technique : Common interface provided, onto which different components could be attached. Eg : extension, add-ons or plugins.
