@@ -50,17 +50,17 @@ Lucid Chart : <https://www.lucidchart.com/pages/uml-deployment-diagram>
 ## Activity Diagram
 
 Designed to capture the flow of the system. It captures dynamic behavior and allows the mapping into alternative flows. 
-Luicd Chart : <https://www.lucidchart.com/pages/uml-activity-diagram>
+Lucid Chart : <https://www.lucidchart.com/pages/uml-activity-diagram>
 
 ## Architectural Styles
 
 ## Language Based Systems
 
-Each programming language have its own programming paradigm and has its own set pf contructs, principles and design patterns.
+Each programming language have its own programming paradigm and has its own set of constructs, principles and design patterns.
 
 OOPs :
     - Abstraction : simplifies a concept
-    - Encapsulation : Bundle data and fns
+    - Encapsulation : Bundle data and functions
     - Decomposition : Breaks whole into parts
     - Generalization : allows to factor out conceptual commonalities.
 
@@ -71,7 +71,7 @@ OO DP :
 
 ### Abstract and Object Oriented Design
 
-OO Architecture is focused on data, how its model-led and grouped. Encapsulation restricts access and use of it.
+OO Architecture is focused on data, how its modeled and grouped. Encapsulation restricts access and use of it.
 Evaluating the data types used, the system can be broken down into abstract data types. Classes help to group data and related methods together.
 
 Access Specifiers and methods : allow inter object communication
@@ -81,7 +81,7 @@ Inheritance : allow extensions on abstract types.
 
 Main Program and subroutine architectural style is used in the procedural programming paradigm. Idle for computation centered systems.
 The subroutine is also termed as routine, procedure and functions.
-The main program would call routine and they in-turn calls subroutines. 
+The main program would call routine and they in-turn calls subroutines.
 
 ## Repository based system
 
@@ -96,10 +96,10 @@ The qualities of data-centric architecture are :
 ## Layer Systems
 
 Very common architecture.
- 
+
 The architectures can sometime be designed in layers which one layer talking only to its adjacent layer.
 These systems provide :
-    - security and reliability  of the core layer
+    - security and reliability of the core layer
     - Design is loosely coupled and follows principle of least knowledge.
 The overhead of layering should be balanced against separation of concerns gained.
 
@@ -108,7 +108,7 @@ The overhead of layering should be balanced against separation of concerns gaine
 Tiers refer to component that are typically on different machines. 3 tier and 4 tier architecture are common.
 The adjacent tiers will have client/server relationship. The communication can be asynchronous or synchronous.
 
-Difficulties are in tier communication protocols. and single point of failure servers.
+Difficulties are in tier communication protocols. and multi point of failure servers.
 
 Advantages are :
     - scalable. The servers can handle large amount of requests.
@@ -178,4 +178,5 @@ Feedback loops have 4 basic component :
     - actuator
     - process
 Feedback loops are designed for closed system. Other variants of feedback loop for open system is Feedforward control, they are designed to control process in series.
+
 
