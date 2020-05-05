@@ -218,6 +218,11 @@ A well-designed system considers quality attributes from a developer’s perspec
 ### Analyzing and Evaluating Architecture
 
 ATAM developed by Carnegie Mellon University, allows outsiders to evaluate systems they are not part of.
+There are 3 main groups :
+    - Evaluation team
+    - Project decision makers
+    - architectural stakeholders
+    
 The Evaluation team has 3 groups :
     - Designers :
         - Responsible for architectural design
