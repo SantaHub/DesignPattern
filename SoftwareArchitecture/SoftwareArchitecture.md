@@ -17,7 +17,7 @@ Scenario : use cases. Provides context for all the views.
 
 ### Component Diagram
 
-To visualize interaction and relationship among pieces of a system. They show high level structured view. Component diagrams have ball connectors, which represents provided interface and socket connectors, which represet a required interface.
+To visualize interaction and relationship among pieces of a system. They show high level structured view. Component diagrams have ball connectors, which represents provided interface and socket connectors, which represent a required interface.
 
 Assembly relationship : when a components required interface matches with the provided interface.
 
@@ -145,13 +145,13 @@ Disadvantages :
 
 ## Implicit invocation Systems
 
-### Event -based architectural style
+### Event-based architectural style
 
 Events are both indicators of change and triggers to functions. Event generators and event consumers.
 
 Function types:
     - Asynchronous : event consumers could be running simultaneously on shared global data. Effecficient, but can cause race condition.
-    - Synchronous : 
+    - Synchronous : Events happening concurrently.
 
 Race condition : behavior of a function depend on the time and order of data. A condition in which data might not be updated correctly.
 Semaphore : A boolean value to indicate availability state of shared data. 
@@ -168,7 +168,7 @@ Eg : RSS feed, mailing list.
 
 ## Process Control Systems
 
-They are important in efficient and safe operation. 
+They are important in efficient and safe operation.
 
 ### Feedback loop
 
@@ -222,7 +222,7 @@ There are 3 main groups :
     - Evaluation team
     - Project decision makers
     - architectural stakeholders
-    
+
 The Evaluation team has 3 groups :
     - Designers :
         - Responsible for architectural design
@@ -236,7 +236,7 @@ The Evaluation team has 3 groups :
 
 ATAM Process :
     - Present the ATAM : Evaluation team present ATAM process, including context evaluation, expectations, procedures, outputs and concerns.
-    - Present business drivers : Project decision makers present business problem and goals fro the system. Also features, requirements, constrains and scope.
+    - Present business drivers : Project decision makers present business problem and goals for the system. Also features, requirements, constrains and scope.
     - Present the architecture : Current architecture is presented with constrains, time, cost, difficulty and quality.
 
     - Identify architectural approach : first analysis activity, involves examining the architectural patterns used, involving all stakeholder's queries.
@@ -247,7 +247,7 @@ ATAM Process :
     - Present the result : The result contains :
         - risk scenarios : grouped together as risk themes. This helps to identify affected user base.
         - All risk and non risk scenarios
-        - sensitivity points
+        - sensitivity points : the situations that causes other attribute changes, like high load.
         - tradeoffs
         - risk themes
 
